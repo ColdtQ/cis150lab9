@@ -1,3 +1,8 @@
+/*
+Name: Trevor Romano
+Lab: CIS 150 Lab 9
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -27,6 +32,7 @@ public:
 
 int main()
 {
+    // create store object with starter values
     StoreInfo myStoreInfo;
     myStoreInfo.storeNumber = 101;
     myStoreInfo.name = "Smoothie Central";
@@ -35,6 +41,7 @@ int main()
     myStoreInfo.phone = "(555) 123-4567";
     myStoreInfo.managerName = "Your Name";
 
+    // show store info block
     myStoreInfo.printHeader();
 
     return 0;

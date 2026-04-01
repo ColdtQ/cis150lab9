@@ -1,3 +1,8 @@
+/*
+Name: Trevor Romano
+Lab: CIS 150 Lab 9
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -52,6 +57,7 @@ void printDailyMax(Smoothie drinksToday[], int size);
 
 int main()
 {
+    // today menu lineup for the shop
     Smoothie drinksToday[4] = {
         Smoothie("Banana", 7.99, 25, 4.35, 275),
         Smoothie("Vanilla", 5.59, 100, 3.10, 320),
@@ -59,6 +65,7 @@ int main()
         Smoothie("Berry", 7.59, 45, 4.50, 390)
     };
 
+    // show menu then daily totals
     displayMenu(drinksToday, 4);
     cout << "\n";
     printDailyMax(drinksToday, 4);
@@ -75,6 +82,7 @@ void printStoreHeader()
 
 void displayMenu(Smoothie drinksToday[], int size)
 {
+    // print header and each drink option
     printStoreHeader();
     cout << "Drinks Available Today:\n";
 
@@ -87,6 +95,7 @@ void displayMenu(Smoothie drinksToday[], int size)
 
 void printDailyMax(Smoothie drinksToday[], int size)
 {
+    // running totals for end of day limits
     double totalMaxSales = 0;
     double totalMaxProfit = 0;
 

@@ -1,3 +1,8 @@
+/*
+Name: Trevor Romano
+Lab: CIS 150 Lab 9
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -10,8 +15,10 @@ double customizeItem(string& currentDrinkDescription, string& customizationName,
 
 int main()
 {
+    // print the shop header first
     printStoreHeader();
 
+    // starting drink price and customization total
     double basePrice = 7.99;
     double totalCustomizationCost = 0;
     string drinkSpec = "Large Vanilla Frappe";
@@ -44,6 +51,7 @@ int main()
 
 void printStoreHeader()
 {
+    // simple banner for the output
     cout << "========================================\n";
     cout << "      CIS 150 Smoothie Shop - Lab 9     \n";
     cout << "========================================\n";
