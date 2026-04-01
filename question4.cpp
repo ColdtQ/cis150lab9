@@ -1,3 +1,8 @@
+/*
+Name: Trevor Romano
+Lab: CIS 150 Lab 9
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -52,8 +57,10 @@ public:
 
 int main()
 {
+    // build store info using the constructor
     StoreInfo myStoreInfo(101, "Smoothie Central", "123 Main St", "Anytown, USA", "(555) 123-4567", "Your Name");
 
+    // print the formatted header lines
     myStoreInfo.printHeader();
 
     return 0;

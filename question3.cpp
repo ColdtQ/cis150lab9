@@ -1,3 +1,8 @@
+/*
+Name: Trevor Romano
+Lab: CIS 150 Lab 9
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -42,8 +47,10 @@ public:
 
 int main()
 {
+    // make the store object
     StoreInfo myStoreInfo;
 
+    // fill in values with setters
     myStoreInfo.setStoreNumber(101);
     myStoreInfo.setName("Smoothie Central");
     myStoreInfo.setAddress("123 Main St");
@@ -51,6 +58,7 @@ int main()
     myStoreInfo.setPhone("(555) 123-4567");
     myStoreInfo.setManagerName("Your Name");
 
+    // print the store header block
     myStoreInfo.printHeader();
 
     return 0;
